@@ -4,6 +4,7 @@ a2enmod rewrite
 
 if [ ! -f /var/www/html/index.php ]; then
     unzip /tmp/akaunting.zip -d /var/www/html
+    cp /var/www/html/.env.example /var/www/html/.env
 fi
 
 rm -f /tmp/akaunting.zip
